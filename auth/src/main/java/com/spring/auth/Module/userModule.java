@@ -30,18 +30,18 @@ public class userModule {
     private Date creatDate;
 
     @Column(nullable = false)
-    private boolean check;
+    private boolean isCheck;
 
     public userModule() {
     }
 
-    public userModule(Long id, String name, String email, String pass, Date creatDate, boolean check) {
+    public userModule(Long id, String name, String email, String pass, Date creatDate, boolean isCheck) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.pass = pass;
         this.creatDate = creatDate;
-        this.check = check;
+        this.isCheck = isCheck;
     }
 
     public Long getId() {
@@ -84,13 +84,11 @@ public class userModule {
         this.creatDate = creatDate;
     }
 
-    public boolean isCheck() {
-        return check;
+    public boolean isisCheck() {
+        return isCheck;
     }
 
-    public void setCheck(boolean check) {
-        this.check = check;
-    }
-
-    
+    public void setisCheck(boolean isCheck) {
+        this.isCheck = isCheck;
+    }   
 }
