@@ -15,7 +15,7 @@ public class jwtToken {
     private static final Long EXP = 24 * 60 * 60 * 1000L; 
 
     private SecretKey keyGenerate(){
-        String SECERT_KEY = "125wsqc67opk2ww3w$%@#!687902i1bhvfx6as8io";
+        String SECERT_KEY = "your-secert-key-generate-token";
         return Keys.hmacShaKeyFor(SECERT_KEY.getBytes());
     }
 
