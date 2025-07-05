@@ -1,7 +1,6 @@
 package com.spring.auth.security;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,6 +38,8 @@ public class javaSecurity {
         httpSecurity.csrf((csrf) -> {
             csrf.disable();
         });
+
+        httpSecurity.cors(org.springframework.security.config.Customizer.withDefaults());
 
         return httpSecurity.build();
     }

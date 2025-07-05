@@ -82,7 +82,7 @@ public class userService implements userServiceInterface{
 
     @Override
     public int generateOTP() {
-        int OTP = (int) ( 546721+ Math.random() * 999999);
+        int OTP = (int) ( 9000 + Math.random() * 999999);
         return OTP;
     }
     
